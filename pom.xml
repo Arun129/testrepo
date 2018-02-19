@@ -5,8 +5,8 @@
     <groupId>net.lampetty</groupId>
     <artifactId>war-jar-sample</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>war</packaging>
-    <name>war-jar-sample</name>
+    <packaging>zip</packaging>
+    <name>sample-hello</name>
     <url>http://blogger.lampetty.net/</url>
 
     <properties>
@@ -46,7 +46,7 @@
                     </goals>
                     <phase>generate-resources</phase>
                     <configuration>
-                        <connectionUrl>scm:git:ssh://git@github.com:Arun129/testrepo.git</connectionUrl>
+                        <connectionUrl>scm:git:https://github.com/Arun129/testrepo</connectionUrl>
                         <exportDirectory>${project.build.directory}</exportDirectory>
                     </configuration>
                 </execution>
