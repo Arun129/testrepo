@@ -1,4 +1,21 @@
 <plugin>
+            <artifactId>maven-scm-plugin</artifactId>
+            <version>1.2</version>
+            <executions>
+                <execution>
+                    <id>Foo</id>
+                    <goals>
+                        <goal>export</goal>
+                    </goals>
+                    <phase>generate-resources</phase>
+                    <configuration>
+                        <connectionUrl>scm:git:ssh://git@github.com:Arun129/testrepo.git</connectionUrl>
+                        <exportDirectory>${project.build.directory}</exportDirectory>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+<plugin>
     <artifactId>maven-assembly-plugin</artifactId>
     <version>2.6</version>
     <configuration>
