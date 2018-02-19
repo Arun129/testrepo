@@ -1,0 +1,19 @@
+{
+  "name": "node-js-sample",
+  "version": "0.2.0",
+  "description": "A sample Node.js app ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "contextify": "0.1.14"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arun129/testrepo"
+  }
+}
